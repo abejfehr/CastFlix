@@ -30,4 +30,4 @@ To install the node modules required, type `npm install` at the root of the dire
 
 # How do I add shows?
 
-Adding shows on the home screen is a bit of a manual process. I'll let you in on a secret though: the magic is actually all in the URL. When you're on a page like [http://localhost:3000/bob's%20burgers](http://localhost:3000/bob's%20burgers), just type the name of your show in place of "bob's burgers" and it'll _probably_ work. In case there's multiple ways to spell it, check it out on [thetvdb.com](http://thetvdb.com/)
+Adding shows on the home screen is a bit of a manual process. I'll let you in on a secret though: the magic is actually all in the URL. When you're on a page like [http://localhost:3000/show/bob's%20burgers](http://localhost:3000/show/bob's%20burgers), just type the name of your show in place of "bob's burgers" and it'll _probably_ work. In case there's multiple ways to spell it, check it out on [thetvdb.com](http://thetvdb.com/)
