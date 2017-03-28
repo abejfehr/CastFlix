@@ -8,11 +8,11 @@ Putting movies on my TV is hard. Of course with the Netflix app on my Sony Smart
 
 ## The Solution
 
-Meet CastFlix, a concoction of several APIs and plugins that became (somehow) a remote media center.
+Meet CastFlix, a concoction of several APIs and plugins that (somehow) became a remote media center.
 
 # How to Use
 
-All you need to begin using this awful product is a Chromecast(or Chromecast-enabled TV), an ALLUC API key, and a TVDB API key.
+All you need to begin using this awful product is a [Chromecast](https://www.google.com/intl/en_ca/chromecast/)(or Chromecast-enabled TV), an [ALLUC API key](http://wiki.alluc.to/API), and a [TVDB API key](http://thetvdb.com/?tab=apiregister).
 
 Place those files in a file in the root of this repo called `config.json` which looks something like this:
 
