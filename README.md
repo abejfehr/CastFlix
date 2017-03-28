@@ -2,6 +2,11 @@
 
 A remote media center.
 
+<div style="text-align: center;">
+  <img src="https://raw.githubusercontent.com/abejfehr/CastFlix/master/screenshots/home.png" />
+  <img src="https://raw.githubusercontent.com/abejfehr/CastFlix/master/screenshots/nothome.png" />
+</div>
+
 ## The Problem
 
 Putting movies on my TV is hard. Of course with the Netflix app on my Sony Smart TV I get a ton of great content, but unfortunately Canadian Netflix doesn't have a lot of the great titles available on American Netflix. Finding movies to stream online is pretty easy, but then I have to connect my computer to the television, even though I really wanted to use my computer while I watched movies. I could get a Raspberry Pi, put Kodi on it, and control it from my phone, but I _really_ hate the lack of responsiveness in Kodi on a Pi and the amount of steps it takes just to find content. Why can't I just see a library of great movies/shows and click on one and have it begin playing on my TV?
