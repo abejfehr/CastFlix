@@ -1,0 +1,10 @@
+extends layout
+//- This file used to be used when I relied on the openload API
+block content
+  div#captcha
+    form(action="/captcha_response", method="POST")
+      img(src="#{captcha_url}")
+      input(name="captcha_response")
+      input(type="hidden", name="file", value="#{file}")
+      input(type="hidden", name="ticket", value="#{ticket}")
+      button Submit

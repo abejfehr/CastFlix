@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  #episodes
+    #info
+      h2= series.name
+      p= series.overview
+    #list
+      each episode, index in episodes
+        div.episode
+          div(style="background-image:url(http://thetvdb.com/banners/#{episode.filename});")
+            .info
+              h3
+                a(data-href="/show/#{show}/S#{episode.season}E#{episode.number}")
+                  | #{episode.name}
+              p Season #{episode.season} Episode #{episode.number}
