@@ -1,16 +1,29 @@
-extends layout
-
-block content
-  #episodes
-    #info
-      h2= series.name
-      p= series.overview
-    #list
-      each episode, index in episodes
-        div.episode
-          div(style="background-image:url(http://thetvdb.com/banners/#{episode.filename});")
-            .info
-              h3
-                a(data-href="/show/#{show}/S#{episode.season}E#{episode.number}")
-                  | #{episode.name}
-              p Season #{episode.season} Episode #{episode.number}
+#episodes
+  #info
+    div(style="background-image: url(http://thetvdb.com/banners/#{series.banner});height: 18vw;background-position: center center;background-repeat: no-repeat;background-size: cover; position: relative;")
+      a#home-button(data-get="media://home/", style="position: absolute; top: 20px; left: 20px;")
+        svg(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', viewbox='0 0 1000 1000', enable-background='new 0 0 1000 1000', xml:space='preserve', width="4vw")
+          g
+            path(d='M380.5,100.5l-350,350c-27.3,27.3-27.3,71.6,0,99l350,350c27.3,27.3,71.6,27.3,99,0c27.3-27.3,27.3-71.6,0-99L249,570h671c38.7,0,70-31.3,70-70c0-38.7-31.3-70-70-70H249l230.5-230.5c13.7-13.7,20.5-31.6,20.5-49.5c0-17.9-6.8-35.8-20.5-49.5C452.1,73.2,407.8,73.2,380.5,100.5z', style="fill: white;")
+    //p= series.overview
+    //- ul(style="padding: 0; margin: 0; list-style-type: none;")
+    //-   li(style="display: inline; margin: 0 5px;")
+    //-     a(href="#") Season 1
+    //-   li(style="display: inline; margin: 0 5px;")
+    //-     a(href="#") Season 2
+  #list
+    each episode, index in episodes
+      if episode.filename
+        a(data-post="media://show/#{show}/S#{episode.season}E#{episode.number}", style="background-image: linear-gradient(0deg, black, transparent 40%), url(http://thetvdb.com/banners/#{episode.filename});").thumbnail.episode
+          .info
+            h3
+              | #{episode.name}
+            p Season #{episode.season} Episode #{episode.number}
+      else
+        a(data-post="media://show/#{show}/S#{episode.season}E#{episode.number}", style="background: linear-gradient(0deg, black, transparent 40%), #272727;").thumbnail.episode
+          div(class="no-image")
+            | No Thumbnail
+          .info
+            h3
+              | #{episode.name}
+            p Season #{episode.season} Episode #{episode.number}

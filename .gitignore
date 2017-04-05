@@ -3,3 +3,5 @@ config.json
 TODO.md
 .DS_Store
 youtube-dl-*
+npm-debug.log
+dist

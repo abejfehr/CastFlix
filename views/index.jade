@@ -1,16 +1,9 @@
-extends layout
-
-block content
-  div#dashboard
-    a(href="/show/bob's burgers")
-      img(src="http://thetvdb.com/banners/posters/194031-2.jpg",alt="Bob's Burgers",title="Bob's Burgers")
-      | Bob's Burgers
-    a(href="/show/the office (us)")
-      img(src="http://thetvdb.com/banners/posters/73244-8.jpg",alt="The Office (US)",title="The Office (US)")
-      | The Office (US)
-    a(href="/show/rick and morty")
-      img(src="http://thetvdb.com/banners/posters/275274-11.jpg",alt="Rick and Morty",title="Rick and Morty")
-      | Rick and Morty
-    a(href="/show/bojack horseman")
-      img(src="http://thetvdb.com/banners/posters/282254-6.jpg",alt="BoJack Horseman",title="BoJack Horseman")
-      | BoJack Horseman
+div#dashboard
+  a(data-get="media://show/bob's burgers", style="background-image: linear-gradient(0deg, black, transparent 30%), url(http://thetvdb.com/banners/posters/194031-2.jpg)").thumbnail.show
+    | Bob's Burgers
+  a(data-get="media://show/the office (us)", style="background-image: linear-gradient(0deg, black, transparent 30%), url(http://thetvdb.com/banners/posters/73244-8.jpg)").thumbnail.show
+    | The Office (US)
+  a(data-get="media://show/rick and morty", style="background-image: linear-gradient(0deg, black, transparent 30%), url(http://thetvdb.com/banners/posters/275274-11.jpg)").thumbnail.show
+    | Rick and Morty
+  a(data-get="media://show/bojack horseman", style="background-image: linear-gradient(0deg, black, transparent 30%), url(http://thetvdb.com/banners/posters/282254-6.jpg)").thumbnail.show
+    | BoJack Horseman

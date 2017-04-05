@@ -1,25 +1,34 @@
 {
   "name": "castflix",
-  "version": "0.0.0",
-  "private": true,
+  "version": "0.0.1",
+  "description": "A remote media center app",
+  "main": "main.js",
   "scripts": {
-    "start": "node ./bin/www"
+    "pack": "build --dir",
+    "dist": "build"
+  },
+  "postinstall": "install-app-deps",
+  "author": "Abe Fehr",
+  "license": "MIT",
+  "build": {
+    "appId": "com.abefehr.castflix",
+    "mac": {
+      "category": "public.app-category.entertainment"
+    }
   },
   "dependencies": {
-    "body-parser": "~1.13.2",
+    "@marshallofsound/electron-router": "^1.2.3",
     "chromecast-api": "^0.2.5",
-    "config": "^1.25.1",
     "cookie-parser": "~1.3.5",
     "debug": "~2.2.0",
-    "express": "~4.13.1",
-    "jade": "~1.11.0",
-    "morgan": "~1.6.1",
+    "jade": "^1.11.0",
     "node-fetch": "^1.6.3",
-    "node-openload": "^1.0.0",
     "node-tvdb": "^3.1.1",
     "read-config": "^2.0.0",
-    "serve-favicon": "~2.3.0",
     "tvdb.js": "^1.0.2",
     "youtube-dl": "^1.11.1"
+  },
+  "devDependencies": {
+    "electron": "^1.6.2"
   }
 }

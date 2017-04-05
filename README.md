@@ -26,8 +26,10 @@ Place those files in a file in the root of this repo called `config.json` which 
       "TVDB_API_KEY": "def5678"
     }
 
-To install the node modules required, type `npm install` at the root of the directory. To start, type `npm start` and visit [http://localhost:3000](http://localhost:3000) in the browser to begin browsing shows.
+~~To install the node modules required, type `npm install` at the root of the directory. To start, type `npm start` and visit [http://localhost:3000](http://localhost:3000) in the browser to begin browsing shows.~~
 
-# How do I add shows?
+# ~~How do I add shows?~~
 
-Adding shows on the home screen is a bit of a manual process. I'll let you in on a secret though: the magic is actually all in the URL. When you're on a page like [http://localhost:3000/bob's%20burgers](http://localhost:3000/bob's%20burgers), just type the name of your show in place of "bob's burgers" and it'll _probably_ work. In case there's multiple ways to spell it, check it out on [thetvdb.com](http://thetvdb.com/)
+~~Adding shows on the home screen is a bit of a manual process. I'll let you in on a secret though: the magic is actually all in the URL. When you're on a page like [http://localhost:3000/bob's%20burgers](http://localhost:3000/bob's%20burgers), just type the name of your show in place of "bob's burgers" and it'll _probably_ work. In case there's multiple ways to spell it, check it out on [thetvdb.com](http://thetvdb.com/)~~
+
+Since the initial commit, I've converted it from a NodeJS app to an electron-based app, so those instructions are outdated. I'll update the readme with build instructions eventually and maybe I'll even release a binary one day if I can get the config.json out of there.
